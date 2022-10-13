@@ -11,7 +11,7 @@ function greet()
     $name = htmlspecialchars($_GET['name']);
     $surname = $_GET['surname'];
 
-   return "ola $name $surname !";
+   return "Hola $name $surname !";
 }
 $greeting= greet();
 //$greeting = 'Hola ' . $_GET['name'] . '!';
