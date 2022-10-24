@@ -1,10 +1,18 @@
 <?php
 
+use framework\Database\Database;
+
 require 'config.php';
 require 'app/helpers.php';
-require 'app/Task.php';
 
 
-$tasks = fetchAllTasks(connectDB($config));
+//POD -> OOP
+
+//WISHFUL PROGRAMMING
+$database = new Database($config); //->  Laravel no utiliitzem gairebé mai new -> DI i Container
+$tasks = $database->selectAll('tasks');
+
+//$tasks = Database::selectAll('tasks'); //Crida estàtica -> sense new
+//$tasks = Task::selecAll('tasks'); -> Laravel Eloquent
 
 $greeting = greet();
