@@ -13,17 +13,14 @@ $user = 'debian-sys-maint';
 $pass = '177T1LYP3oL4c6Ey';
 try {
     $dbh = new PDO('mysql:host=localhost;dbname=phplaraveldevs', $user,$pass);
-}catch (\Exception $e){
+} catch (Exception $e){
     echo 'Error de connexió a la base de dades';
 }
+
 $statement = $dbh->prepare('SELECT * FROM tasks;');
 
 $statement->execute();
 
-$tasks = $statement->fetchAll(PDO::FETCH_OBJ);
-
-var_dump($tasks);
-
+$tasks = $statement->fetchAll(PDO::FETCH_CLASS, 'Task');
 
 $greeting= greet();
-//$greeting = 'Hola ' . $_GET['name'] . '!';
