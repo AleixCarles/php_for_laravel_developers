@@ -9,23 +9,15 @@ use PDO;
 class Database
 {
 
-    public $config;
-    private $connection;
-
-    /**
-     * @param $config
-     * @param $connection
-     */
-    public function __construct($config)
+    private static $pdo;
+    public function __construct($pdo)
     {
-        $this->config = $config;
-        $this->connection = new Connection($config);
+        $this->pdo = $pdo;
     }
 
+    public function selectAll($table){
 
-    function selectAll($table){
-        $dbh = $this->connection->connectDB($this->config);
-        $statement = $dbh->prepare("SELECT * FROM $table;");
+        $statement = $this->pdo->prepare("SELECT * FROM $table;");
 
         $statement->execute();
 
