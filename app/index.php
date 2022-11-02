@@ -6,9 +6,7 @@ require 'config.php';
 require 'app/helpers.php';
 
 
-//POD -> OOP
 
-//WISHFUL PROGRAMMING
 $database = new Database($config); //->  Laravel no utiliitzem gairebé mai new -> DI i Container
 $tasks = $database->selectAll('tasks');
 
