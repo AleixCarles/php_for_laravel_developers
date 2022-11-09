@@ -3,7 +3,7 @@
 use Dotenv\Dotenv;
 use Framework\App;
 use framework\Database\Connection;
-use framework\Database\Database;
+use Framework\Database\Database;
 use Framework\Route;
 
 $routes = require '../routes.php';
