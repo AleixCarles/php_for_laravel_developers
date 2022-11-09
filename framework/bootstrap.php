@@ -2,7 +2,7 @@
 
 use Dotenv\Dotenv;
 use Framework\App;
-use framework\Database\Connection;
+use Framework\Database\Connection;
 use Framework\Database\Database;
 use Framework\Route;
 
