@@ -10,7 +10,7 @@
     </header>
     <main>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10">
-        Lorem  ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet autem eveniet expedita facilis illum laboriosam modi nobis provident, quae quidem ratione reprehenderit sapiente, sequi sint tempora tempore voluptas voluptatem?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet autem eveniet expedita facilis illum laboriosam modi nobis provident, quae quidem ratione reprehenderit sapiente, sequi sint tempora tempore voluptas voluptatem?
         </div>
 
     </main>
